@@ -119,3 +119,11 @@ Content-Type: image/jpeg
 (Binary data for the image file)
 -----------------------------1234567890--
 ```
+
+In this example:
+
+Content-Type: multipart/form-data; boundary=---------------------------1234567890 specifies the use of multipart form data with the specified boundary.
+Each part begins with -----------------------------1234567890.
+The first part includes a text field with the name "text_field" and some text data.
+The second part includes a file field with the name "file_field," a filename "example.jpg," and the binary data of an image file with the content type "image/jpeg."
+The boundary string is crucial for distinguishing between different parts within the request body. It must be unique and not appear in the data itself. The server uses the boundary to parse and extract each part of the multipart form data.
