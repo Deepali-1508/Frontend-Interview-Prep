@@ -57,11 +57,10 @@ In HTML, both class and ID are attributes used to apply styles or scripts to spe
   Multiple elements can share the same class, but each ID must be unique.
   CSS rules for classes start with a period (.), and for IDs, they start with a hash (#).
 
-## 5. What are Tables in HTML and Types of Tables?
+## 5. What are List in HTML and Types of List?
 
-In HTML, tables are used to organize and display data in a structured format. A table is created using the `<table>` element, and it consists of rows and columns. The basic structure includes `<tr>` for table rows, `<th>` for table headers, and `<td>` for table data.
-
-### Types of Tables:
+In HTML, a list is a way to organize and structure content. There are three main types of lists: ordered lists, unordered lists, and description lists.
+### Types of List:
 
 1. **Ordered Lists (<ol>):** An ordered list is used to represent a list of items in a specific sequence or order. Each item in the list is marked with a number or another ordered marker. In HTML, you create an ordered list using the <ol> element and list items with the <li> element.
  ```html
@@ -94,3 +93,29 @@ In HTML, tables are used to organize and display data in a structured format. A 
   <dd>A programming language for the web</dd>
 </dl>
 ```  
+
+## 6. What are Tables in HTML and Types of Tables?
+
+In HTML, tables are used to organize and display data in a structured format. A table is created using the `<table>` element, and it consists of rows and columns. The basic structure includes `<tr>` for table rows, `<th>` for table headers, and `<td>` for table data.
+
+## 7. What are Multipart form Data?
+
+Multipart form data is a format used to encode and transmit binary data as part of an HTTP request. It is commonly used when submitting forms that include file uploads or other binary data. Unlike the traditional URL-encoded form data, which is suitable for simple text-based key-value pairs, multipart form data allows for the transmission of binary files, such as images, videos, or documents.
+
+In a multipart form data request, the data is divided into multiple parts, each part represented by a separate section within the request body. Each section has its own set of headers, including a content-type header that specifies the type of data being transmitted (e.g., text, image, etc.). The sections are typically separated by a boundary string.
+
+```POST /submit-form HTTP/1.1
+Host: example.com
+Content-Type: multipart/form-data; boundary=---------------------------1234567890
+
+-----------------------------1234567890
+Content-Disposition: form-data; name="text_field"
+
+Some text data
+-----------------------------1234567890
+Content-Disposition: form-data; name="file_field"; filename="example.jpg"
+Content-Type: image/jpeg
+
+(Binary data for the image file)
+-----------------------------1234567890--
+```
