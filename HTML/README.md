@@ -41,13 +41,13 @@ In HTML, both class and ID are attributes used to apply styles or scripts to spe
 - **class:**
   - A class is a way to apply a style or script to multiple elements on a page.
   - Multiple elements can share the same class.
-  - Defined using the class attribute: <div class="example">.
+  - Defined using the class attribute: `<div class="example">`.
   - Styled in CSS with a period: .example { /* styles */ }.
 
 - **id:**
   - An ID is used to uniquely identify a single element on a page.
   - Each ID must be unique within a page.
-  - Defined using the id attribute: <div id="uniqueElement">.
+  - Defined using the id attribute: `<div id="uniqueElement">`.
   - Styled in CSS with a hash: #uniqueElement { /* styles */ }.
   
  
