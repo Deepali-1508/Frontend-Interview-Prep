@@ -14,7 +14,7 @@ In HTML, the terms "tags," "elements," and "attributes" are fundamental concepts
 
 - **Attributes:** Attributes are used along with the HTML tags to define the characteristics of the element. Attributes provide additional information about HTML elements. They are always included in the opening tag and are used to modify the behavior or appearance of the element. Attributes consist of a name and a value, separated by an equal sign. For example, in `<a href="https://example.com">Visit Example</a>`, `href` is the attribute name, and `https://example.com` is the attribute value.
 
-- **Void Elements:** HTML elements which do not have closing tags or do not need to be closed are Void elements. For Example <br />, <img />, <hr />, etc.
+- **Void Elements:** HTML elements which do not have closing tags or do not need to be closed are Void elements. For Example `<br />, <img />, <hr />,` etc.
 Understanding these concepts is crucial for creating well-structured and semantically meaningful HTML documents.
 
 ## 3. What are HTML entities?
@@ -39,10 +39,10 @@ For apostrophe or single quotation mark, you can use either `&apos;` or the actu
 In HTML, both class and ID are attributes used to apply styles or scripts to specific elements.
 
 - **class:**
-- A class is a way to apply a style or script to multiple elements on a page.
-- Multiple elements can share the same class.
-- Defined using the class attribute: <div class="example">.
-- Styled in CSS with a period: .example { /* styles */ }.
+  - A class is a way to apply a style or script to multiple elements on a page.
+  - Multiple elements can share the same class.
+  - Defined using the class attribute: <div class="example">.
+  - Styled in CSS with a period: .example { /* styles */ }.
 
 - **id:**
   - An ID is used to uniquely identify a single element on a page.
